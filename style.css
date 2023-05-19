@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    margin: 20px auto;
+    border: 5px solid #000;
+    border-radius: 15px;
+    padding: 25px;
+    height: 400px;
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btn input[type="submit"] {
+    font-size: 30px;
+    color: #fff;
+    padding: 30px;
+    /* border: none; */
+    border-radius: 15px;
+    background-color: #000;
+    transition: background-color .5s ease;
+}
+
+.btn input[type="reset"] {
+    font-size: 30px;
+    color: #fff;
+    padding: 30px;
+    /* border: none; */
+    border-radius: 15px;
+    background-color: #000;
+    transition: background-color .5s ease;
+}
+
+.btn input[type="reset"]:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+}
+
+.btn input[type="reset"].blue:hover {
+    color: #0000ff;
+}
+
+.btn input[type="submit"].green:hover {
+    color: #008000;
+}
+
+.btn input[type="submit"].red:hover {
+    color: #ff0000;
+}
+
+.btn input[type="submit"]:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 550px;
+        height: 100vh;
+    }
+
+    .btn {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        height: 100vh;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 100vh;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .container {
+        width: 250px;
+        height: 65vh;
+    }
+
+    .container h1 {
+        font-size: 25px;
+    }
+
+    .btn {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .btn input[type="submit"],
+    .btn input[type="reset"] {
+        font-size: 15px;
+    }
+}
